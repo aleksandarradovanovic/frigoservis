@@ -1,13 +1,10 @@
 import React from 'react';
+import ContainerHome from './app/home/ContainerHome';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+        <ContainerHome />
     </div>
   );
 }
