@@ -30,6 +30,20 @@ module.exports = {
       use: ['style-loader', 'css-loader']
     },
     { test: /\.json$/, loader: 'json-loader' },
+    {
+      test: /\.(jpg|png|svg)$/,
+      loader: 'url-loader',
+      options: {
+        limit: 25000,
+      },
+  },
+  {
+      test: /\.(jpg|png|svg)$/,
+      loader: 'file-loader',
+      options: {
+        limit: 55000,
+      },
+  },
     ]
   },
   devServer: {

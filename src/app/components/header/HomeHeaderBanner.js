@@ -4,18 +4,21 @@ class HomeHeaderBanner extends Component {
     render() {
         return (
             <div className='homeHeaderBanner'>
-                <div className="row">
+                <div className="container">
+                    <div className="row">
 
-                    <div className="col-lg-4">
-                        logo
+                        <div className="col-lg-4">
+                            logo
+                        </div>
+                        <div className="col-lg-4">
+                            contact
+                        </div>
+                        <div className="col-lg-4">
+                            test
+                        </div>
+                    </div>
                 </div>
-                    <div className="col-lg-4">
-                        contact
-                </div>
-                    <div className="col-lg-4">
-                        test
-                </div>
-                </div>
+
             </div>
         );
     }

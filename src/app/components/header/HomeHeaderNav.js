@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem, NavDropdown } from 'react-bootstrap';
 class HomeHeaderNav extends Component {
-    render() {
+    
+    render() {        
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            // if (window.pageYOffset > sticky) {
+            //     header.classList.add("sticky");
+            // } else {
+            //     header.classList.remove("sticky");
+            // }
+        
         return (
             <div>
-                <Navbar bg="dark" expand="lg"  sticky="top">
+                <Navbar bg="info" expand="lg" sticky="bottom">
                     <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -18,6 +26,12 @@ class HomeHeaderNav extends Component {
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                             </NavDropdown>
+                        </Nav>
+                        <Nav>
+                            <Nav.Link href="#deets">FB</Nav.Link>
+                            <Nav.Link href="#memes">
+                                INSTAGRAM
+                            </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
