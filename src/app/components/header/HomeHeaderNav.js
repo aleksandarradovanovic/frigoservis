@@ -11,21 +11,20 @@ class HomeHeaderNav extends Component {
     // }
 
     return (
-      <div>
-        <Navbar bg="info" expand="lg" sticky="bottom">
+        <Navbar bg="light" expand="lg" sticky="bottom">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="#home">Pocetna</Nav.Link>
-              <NavDropdown title="Usluge" id="basic-nav-dropdown">
+              <Nav.Link href="#home" className = "navBarItems">Pocetna</Nav.Link>
+              <NavDropdown title="Usluge" id="basic-nav-dropdown" className = "navBarItems">
                 <NavDropdown.Item href="#action/3.1">Popravka</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Izrada</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">Prodaja</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#link">O nama</Nav.Link>
-              <Nav.Link href="#link">Kontakt</Nav.Link>
+              <Nav.Link href="#link" className = "navBarItems">O nama</Nav.Link>
+              <Nav.Link href="#link" className = "navBarItems">Kontakt</Nav.Link>
 
             </Nav>
             <Nav>
@@ -39,7 +38,6 @@ class HomeHeaderNav extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-      </div>
     );
   }
 }

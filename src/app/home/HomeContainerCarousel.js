@@ -9,7 +9,7 @@ class HomeContainerCarousel extends Component {
                     <Carousel.Item>
                         <img
                             className="carouselImage"
-                            src="../../../public/image/test1.jpg"
+                            src="../../../public/image/test2.jpg"
                             alt="First slide"
                         />
                         <Carousel.Caption>
@@ -17,7 +17,7 @@ class HomeContainerCarousel extends Component {
                             <p>Koristimo najkvalitenije materijale</p>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item>
+                    {/* <Carousel.Item>
                         <img
                             className="carouselImage"
                             src="../../../public/image/klimaTest.jpg"
@@ -40,7 +40,7 @@ class HomeContainerCarousel extends Component {
                             <h3>Third slide label</h3>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                         </Carousel.Caption>
-                    </Carousel.Item>
+                    </Carousel.Item> */}
                 </Carousel>
             </div>
         );
