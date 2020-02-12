@@ -20,13 +20,13 @@ class HomeContainerCarousel extends Component {
                     <Carousel.Item>
                         <img
                             className="carouselImage"
-                            src="../../../public/image/download.jpg"
+                            src="../../../public/image/klimaTest.jpg"
                             alt="Third slide"
                         />
 
                         <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3>Klima je top</h3>
+                            <p>Popravka i ugradnja klima uredjaja</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
