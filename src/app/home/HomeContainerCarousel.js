@@ -9,11 +9,11 @@ class HomeContainerCarousel extends Component {
                     <Carousel.Item>
                         <img
                             className="carouselImage"
-                            src="../../../public/image/test2.jpg"
+                            src="../../../public/image/test4.jpg"
                             alt="First slide"
                         />
                         <Carousel.Caption>
-                            <h1>Izrada plastenika</h1>
+                            <h1>Servis i popravka klima uredjaja</h1>
                             <p>Koristimo najkvalitenije materijale</p>
                         </Carousel.Caption>
                     </Carousel.Item>
