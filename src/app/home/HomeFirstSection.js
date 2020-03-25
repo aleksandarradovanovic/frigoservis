@@ -20,7 +20,7 @@ class HomeFirstSection extends Component {
     }
     render() {
         return (
-            <div className="homeFirstSection">
+            <div className="container-fluid homeFirstSection">
                 <div className="row">
                     {data.content.infoCards.map((element, index) => (
                         this.createElement(element)

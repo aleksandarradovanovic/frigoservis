@@ -4,6 +4,7 @@ class HomeHeaderBanner extends Component {
   render() {
     return (
       <div className='homeHeaderBanner'>
+        <div className = "container-fluid">
           <div className="row">
 
             <div className="col-lg-4">
@@ -33,6 +34,7 @@ class HomeHeaderBanner extends Component {
                 </div>
               </div>
             </div>
+          </div>
           </div>
       </div>
     );
