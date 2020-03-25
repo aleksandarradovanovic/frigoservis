@@ -5,12 +5,10 @@ import Test from "./components/Test";
 export const home = "/";
 
 const router =
-
     <Router history={browserHistory}>
-        <Route exact path={"/"} component={App}>
+                <Route path={"/"} component={App}/>
             {/* <IndexRoute component={<App/>} /> */}
-            <Route exact path={'/about'} component={Test} />
-        </Route>
+            <Route path={'/about'} component={Test} />
     </Router>;
 
 export { router };

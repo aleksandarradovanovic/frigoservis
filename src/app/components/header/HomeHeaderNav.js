@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem, NavDropdown } from 'react-bootstrap';
 import { data } from '../../../configurationData'
+import { browserHistory } from "react-router";
 
 class HomeHeaderNav extends Component {
   constructor(props) {
     super(props)
     this.createDropdownElement = this.createDropdownElement.bind(this)
     this.createChildrenElement = this.createChildrenElement.bind(this)
+  }
+  navigate(value){
+    browserHistory.push(value)
   }
   createChildrenElement(data){
     let children = data.map((element, index) => (
@@ -28,7 +32,7 @@ class HomeHeaderNav extends Component {
     }
     else {
       row.push(
-        <Nav.Link href={element.href} className="navBarItems">{element.value}</Nav.Link>
+        <Nav href={element.href} className="navBarItems" onClick={()=>this.navigate(element.href)}>{element.value}</Nav>
       )
     }
     return row

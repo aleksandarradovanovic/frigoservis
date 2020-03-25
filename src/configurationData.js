@@ -45,7 +45,7 @@ export const data = {
             },
             {
                 value: 'O nama',
-                href: 'o-nama',
+                href: 'about',
                 default: false,
                 children: null
             },

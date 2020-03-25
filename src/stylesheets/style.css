@@ -259,8 +259,6 @@ body{
   .infoSection {
     width: 60%;
     height: 200px;
-    border-radius: 5px;
-    border-left: 1px solid #cfcfcfcf;
   }
   .position-center{
     text-align: center;
