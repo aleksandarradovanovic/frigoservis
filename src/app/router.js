@@ -1,18 +1,16 @@
 import React from "react";
-// import {  Route, Router, browserHistory } from "react-router";
-import { HashRouter, Route } from 'react-router-dom';
+import {  Route, Router,IndexRoute, browserHistory } from "react-router";
 import App from "../App";
+import Test from "./components/Test";
 export const home = "/";
 
 const router =
-    // <Router history={browserHistory}>
-    //     <Route path={"/"} component={App}>
-    //         <Route path={"/home"} component={App} />
 
-    //     </Route>
-    // </Router>;
-    <HashRouter>
-         <Route path="/" component={App} />
-    </HashRouter>
+    <Router history={browserHistory}>
+        <Route exact path={"/"} component={App}>
+            {/* <IndexRoute component={<App/>} /> */}
+            <Route exact path={'/about'} component={Test} />
+        </Route>
+    </Router>;
 
 export { router };
