@@ -4,8 +4,8 @@ class HomeSecondSection extends Component {
   render() {
     return (
       <div className="container">
-        <div class="grid">
-          <figure class="effect-layla">
+        <div className="grid">
+          <figure className="effect-layla">
             <img src={'../../../public/image/klimaTest.jpg'} alt="img06" />
             <figcaption>
               <h2>Test <span>Test</span></h2>
@@ -13,7 +13,7 @@ class HomeSecondSection extends Component {
               <a href="#">View more</a>
             </figcaption>
           </figure>
-          <figure class="effect-layla">
+          <figure className="effect-layla">
             <img src="../../../public/image/test3.jpeg" alt="img03" />
             <figcaption>
               <h2>Test <span>Test</span></h2>
